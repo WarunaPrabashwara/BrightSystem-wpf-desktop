@@ -1,0 +1,30 @@
+﻿<Window x:Class="BrightSystem.windowtoprint"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrightSystem"
+        mc:Ignorable="d"
+        Title="windowtoprint" Height="450" Width="800">
+    <Grid x:Name="grid" >
+        <DataGrid x:Name="datagridXml"   Margin="94,189,68,130">
+
+            <DataGrid.Columns >
+                <DataGridTextColumn Header=" " Binding="{Binding zero}" Width="0" />
+                <DataGridTextColumn Header=" " Binding="{Binding first}" Width="0" />
+                <DataGridTextColumn Header=" " Binding="{Binding second}" Width="0"  />
+                <DataGridTextColumn Header=" " Binding="{Binding third}" Width="100" />
+                <DataGridTextColumn Header=" " Binding="{Binding fourth}" Width="100" />
+                <DataGridTextColumn Header=" " Binding="{Binding fifth }" Width="100" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Teacher name" HorizontalAlignment="Left" Margin="135,36,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="namec" Content="" HorizontalAlignment="Left" Margin="287,36,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Percentage" HorizontalAlignment="Left" Margin="135,62,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="phonec" Content="" HorizontalAlignment="Left" Margin="287,62,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,89,0,0" TextWrapping="Wrap" Text="List of paid students and released(free card for month if amount is zero ) students( students , who eithe attended or not attended and didnt pay, are not included .&quot;+ Environment.NewLine + &quot; if needed request from operator   note:if a student didnt present for entire month , we dont charge from him for that month . so he isnt included in not paid student list you obtain from operator &quot; + Environment.NewLine+ &quot;Teacher name : &quot; + teachername+ &quot;  percentage : &quot; " VerticalAlignment="Top"/>
+        <Label x:Name="filename" Content="" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+
+
+    </Grid>
+</Window>

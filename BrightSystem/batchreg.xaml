@@ -1,0 +1,30 @@
+﻿<Window x:Class="BrightSystem.batchreg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrightSystem"
+        mc:Ignorable="d"
+        Title="batch ඇතුලු කරන්න " Height="450" Width="800">
+    <Grid   Background="Bisque" >
+
+        <Grid Margin="36,98,24,0" Background="White" Height="264" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="252*" />
+                <!--   <RowDefinition Height="12*" />-->
+            </Grid.RowDefinitions>
+            <TextBlock Height="20" HorizontalAlignment="Left" Margin="67,0,0,0" x:Name ="errormessage" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="#FFE5572C" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,33,0,0" Name="textBlockFirstname" Text="නම  :" VerticalAlignment="Top" Width="110" />
+
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="222,33,0,0" Name="textBoxFirstName" VerticalAlignment="Top" Width="222" />
+            <StackPanel />
+            <!--For password-->
+
+            <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="183,204,0,0" Name="Submit" VerticalAlignment="Top" Width="70" Click="Submit_Click" />
+            <Button Content="Reset" Height="23" HorizontalAlignment="Left" Margin="259,204,0,0" Name="button2" VerticalAlignment="Top" Width="70" Click="button2_Click" />
+            <Button Content="Cancel" Height="23" HorizontalAlignment="Right" Margin="0,204,60,0" Name="button3" VerticalAlignment="Top" Width="70" Click="button3_Click" />
+        </Grid>
+
+
+    </Grid>
+</Window>

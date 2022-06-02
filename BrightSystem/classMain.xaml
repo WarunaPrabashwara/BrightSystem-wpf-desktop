@@ -1,0 +1,42 @@
+﻿<Page x:Class="BrightSystem.classMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BrightSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="classMain">
+
+    <Grid>
+        <Button Content="නව පන්තියක් ඇතුලු කරන්න " HorizontalAlignment="Center" Margin="349,19,0,0" VerticalAlignment="Top" Click="newclass"  Background="#FF00FF50"/>
+        <DataGrid x:Name="datagridXml"   Margin="94,94,68,34">
+            <DataGrid.Resources >
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Turquoise"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="class id" Binding="{Binding cid}" Width="50"  />
+                <DataGridTextColumn Header="teacher id " Binding="{Binding tid}" Width="0" Visibility="Collapsed" />
+                <DataGridTextColumn Header="classes" Binding="{Binding cnameNtname}" Width="*" />
+
+                <DataGridTemplateColumn Header="View">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btnView" Content="View" Click="viewclick" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="naminsoyann" HorizontalAlignment="Left" Margin="420,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Height="23" TextChanged="TextBox_TextChanged" TextAlignment="Center"/>
+        <Label x:Name="naminsoyana" Content="නමින් හෝ අයි.ඩී එකෙන් සොයන්න " HorizontalAlignment="Left" Margin="188,52,0,0" VerticalAlignment="Top"  />
+
+    </Grid>
+</Page>

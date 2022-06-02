@@ -1,0 +1,56 @@
+﻿<Window x:Class="BrightSystem.teacherprofile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrightSystem"
+        mc:Ignorable="d"
+        Title="teacherprofile" Height="450" Width="800" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="idc" Content="" HorizontalAlignment="Left" Margin="287,10,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="135,36,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="namec" Content="" HorizontalAlignment="Left" Margin="287,36,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="135,62,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="phonec" Content="" HorizontalAlignment="Left" Margin="287,62,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Percentage" HorizontalAlignment="Left" Margin="135,88,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="baatch" Content="" HorizontalAlignment="Left" Margin="287,88,0,0" VerticalAlignment="Top" Height="26" Width="77"/>
+        <DataGrid x:Name="datagridXml"   Margin="98,227,64,44">
+            <DataGrid.Resources >
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Turquoise"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="class id " Binding="{Binding cid}" Width="50"  />
+                <DataGridTextColumn Header="tid" Binding="{Binding tid}" Width="0" Visibility="Collapsed"  />
+                <DataGridTextColumn Header="classes" Binding="{Binding cnameNtname}" Width="*" />
+
+                <DataGridTemplateColumn Header="View">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btnView" Content="View" Click="viewclick" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Has to pay total of :" HorizontalAlignment="Left" Margin="44,140,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="baatch_Copy" Content="" HorizontalAlignment="Left" Margin="160,140,0,0" VerticalAlignment="Top" Height="26" Width="131"/>
+        <Label Content="For months" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
+        <Label x:Name="phonec_Copy" Content="" HorizontalAlignment="Center" Margin="485,140,0,0" VerticalAlignment="Top" Height="26" Width="266"/>
+        <Button Content="Generate and download report" HorizontalAlignment="Left" Margin="443,176,0,0" VerticalAlignment="Top" Click="Button_Click"  Background="#FF00FF50" />
+        <Button Content="Click after Pay" HorizontalAlignment="Left" Margin="644,176,0,0" VerticalAlignment="Top" Click="paybut"  Background="#FF00FF50" />
+        <TextBox x:Name="naminsoyann" HorizontalAlignment="Left" Margin="576,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Height="23" TextChanged="TextBox_TextChanged" TextAlignment="Center"/>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="367,89,0,0" x:Name="textBoxLastName_Copy" VerticalAlignment="Top" Width="173" />
+        <Button x:Name="editbut" Content="Edit percentage" HorizontalAlignment="Left" Margin="400,91,0,0" VerticalAlignment="Top" Click="editbut_Click"  Background="#FF00FF50" />
+        <Button x:Name="submitbut" Content="Submit" HorizontalAlignment="Left" Margin="547,90,0,0" VerticalAlignment="Top" Click="submitbut_Click" Background="#FFF0F172"/>
+        <Label x:Name="naminsoyana" Content="නමින් හෝ අයි.ඩී එකෙන් සොයන්න " HorizontalAlignment="Left" Margin="353,198,0,0" VerticalAlignment="Top"  />
+
+    </Grid>
+</Window>

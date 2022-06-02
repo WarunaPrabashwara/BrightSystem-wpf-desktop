@@ -1,0 +1,20 @@
+﻿<Window x:Class="BrightSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrightSystem"
+        mc:Ignorable="d"
+        Title="Bright Education Centre" Height="450" Width="800">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top" Width="492">
+            <TextBox TextWrapping="Wrap" Text="බ්‍රයිට් අධ්‍යාපන ආයතනය" Width="797" Height="20" FontSize="12" FontFamily="Swis721 Blk BT" FontWeight="Bold" BorderBrush="{x:Null}" RenderTransformOrigin="0.498,0.528" VerticalAlignment="Center" TextAlignment="Center"/>
+
+        </StackPanel>
+        <Frame x:Name="Main" Margin="0,35,0,0" NavigationUIVisibility="Visible"/>
+        <Button x:Name="forwad" Content="ඉදිරියට" HorizontalAlignment="Center" VerticalAlignment="Center" Height="53" Width="217" Click="forwad_Click" Background="Red" FontSize="30" BorderBrush="White" FontWeight="Bold" Foreground="#FFF9F9F9"/>
+        <PasswordBox x:Name="paswdbox" HorizontalAlignment="Left" Margin="400,147,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Page x:Class="BrightSystem.secondpage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BrightSystem"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="secondpage">
+
+    <ScrollViewer HorizontalScrollBarVisibility="auto" VerticalScrollBarVisibility="auto">
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Width ="120" Height ="40" Margin="468,166,0,0"  Background="#FFFFA0A0" FontSize="25" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top"><Hyperlink NavigateUri="teachMain.xaml" TextDecorations=""><Run Text="ගුරුවරුන්"/></Hyperlink></TextBlock>
+            <TextBlock Width ="120" Height ="40"  Margin="195,166,0,0" Background="#FFFFA0A0" FontSize="25" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" > <Hyperlink NavigateUri="stdMain.xaml" TextDecorations=""><Run Text="සිසුන්"/></Hyperlink></TextBlock>
+            <TextBlock Width ="120" Height ="40"  Margin="338,262,0,0" Background="#FFFFA0A0" FontSize="25" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" > <Hyperlink NavigateUri="classMain.xaml" TextDecorations=""><Run Text="පංති"/></Hyperlink></TextBlock>
+            <TextBlock Width ="120" Height ="40"  Margin="640,372,27,11" FontSize="25" TextAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Bottom" ><Hyperlink NavigateUri="extraMain.xaml" TextDecorations=""><Run Text="අමතර"/></Hyperlink></TextBlock>
+            <Label Content="A GRADE SOFTWARE SOLUTIONS  +94713705748" HorizontalAlignment="Center" Margin="0,370,0,0" VerticalAlignment="Bottom"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

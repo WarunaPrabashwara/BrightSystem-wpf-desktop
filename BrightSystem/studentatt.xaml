@@ -1,0 +1,20 @@
+﻿<Window x:Class="BrightSystem.studentatt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrightSystem"
+        mc:Ignorable="d"
+        Title="student attendance" Height="450" Width="800">
+    <Grid  Background="White" Margin="0,-2,0,2">
+        <Label Content="Attended dates" HorizontalAlignment="Left" Margin="151,39,0,0" VerticalAlignment="Top" Height="26" Width="129" FontWeight="Bold" FontFamily="Arial Black"/>
+        <Label Content="Fee card offered and paid dates  for month and amount" HorizontalAlignment="Left" Margin="406,39,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontWeight="Bold"/>
+        <ListBox x:Name="attendancelistbox"  Margin="107,67,493,20" BorderBrush="White"/>
+        <ListBox x:Name="feepaidlistbox"  Margin="417,67,32,20" BorderBrush="White" Background="White"/>
+        <Label Content="Student Name" HorizontalAlignment="Left" Margin="59,5,0,0" VerticalAlignment="Top" Height="26" Width="108"/>
+        <Label x:Name="namec" Content="" HorizontalAlignment="Left" Margin="172,5,0,0" VerticalAlignment="Top" Height="26" Width="172"/>
+        <Label Content="class" HorizontalAlignment="Left" Margin="397,5,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="phonec" Content="" HorizontalAlignment="Left" Margin="562,5,0,0" VerticalAlignment="Top" Height="26" Width="192"/>
+
+    </Grid>
+</Window>

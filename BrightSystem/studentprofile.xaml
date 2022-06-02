@@ -1,0 +1,89 @@
+﻿<Window x:Class="BrightSystem.studentprofile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrightSystem"
+        mc:Ignorable="d"
+        Title="student profile" Height="450" Width="800"  WindowStartupLocation="CenterScreen"   >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="idc" Content="" HorizontalAlignment="Left" Margin="287,10,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="135,36,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="namec" Content="" HorizontalAlignment="Left" Margin="287,36,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="135,62,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="phonec" Content="" HorizontalAlignment="Left" Margin="287,62,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Batch" HorizontalAlignment="Left" Margin="135,88,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Label x:Name="baatch" Content="" HorizontalAlignment="Left" Margin="287,88,0,0" VerticalAlignment="Top" Height="26" Width="325"/>
+        <Label Content="Finger print" HorizontalAlignment="Left" Margin="135,114,0,0" VerticalAlignment="Top" Height="26" Width="129"/>
+        <Button Content="මෙම සිසුවා පන්ති වලට ඇතුලු කරන්න" HorizontalAlignment="Left" Margin="534,132,0,0" VerticalAlignment="Top" Click="classtokid"  Background="#FF00FF50"/>
+        <DataGrid x:Name="datagridXml"   Margin="33,217,34,24">
+            <DataGrid.Resources >
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Turquoise"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="cid" Binding="{Binding cid}" Width="0" Visibility="Collapsed" />
+                <DataGridTextColumn Header="tid" Binding="{Binding tid}" Width="0" Visibility="Collapsed"  />
+                <DataGridTextColumn Header="classes" Binding="{Binding cnameNtname}" Width="*" />
+
+                <DataGridTemplateColumn Header="අද ආවා ද">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="presbut" Content="ඔවු" Click="presentclick" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="පහත මාසය ට ගෙවා නැත" Binding="{Binding hastopayfor}" Width="180" />
+
+                <DataGridTemplateColumn Header="ගෙවුවා">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="paybut" Content="ගෙවුවා" Click="payfee" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="නොමිලේ දුන්නා ">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="notchagebut" Content="නොමිලේ දුන්නා " Click="notchargedclick" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="පැමිනීම">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="attendancebut" Content="බලන්න" Click="attendance" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="View">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btnView" Content="View" Click="viewclick" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="naminsoyann" HorizontalAlignment="Left" Margin="446,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Height="23" TextChanged="TextBox_TextChanged" TextAlignment="Center"/>
+        <Label x:Name="naminsoyana" Content="නමින් හෝ අයි.ඩී එකෙන් සොයන්න " HorizontalAlignment="Left" Margin="213,163,0,0" VerticalAlignment="Top" />
+        <Button x:Name="addfinger" Content="Add" HorizontalAlignment="Left" Margin="288,118,0,0" VerticalAlignment="Top"  Background="#FF00FF50"/>
+        <Button x:Name="changefinger" Content="Change" HorizontalAlignment="Left" Margin="297,118,0,0" VerticalAlignment="Top"  Background="#FF00FF50"/>
+
+    </Grid>
+</Window>

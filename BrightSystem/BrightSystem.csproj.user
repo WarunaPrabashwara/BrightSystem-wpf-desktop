@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="batchmanagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="batchreg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="classesprofile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="classMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="classreg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="classtokid.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="extraMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="kidstoclass.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="makename.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="secondpage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="stdMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="stdregist.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="studentatt.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="studentprofile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="teacherprofile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="teacherreg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="teachMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="windowtoprint.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="batchmanagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="batchreg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="classesprofile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="classMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="classreg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="classtokid.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="extraMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="kidstoclass.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="makename.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="secondpage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="stdMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="stdregist.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="studentatt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="studentprofile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="teacherprofile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="teacherreg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="teachMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="windowtoprint.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
